@@ -31,7 +31,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3002/login",
+        "https://alphatrade-backend-d8jd.onrender.com/login",
         {
           ...inputValue,
         },

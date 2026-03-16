@@ -16,7 +16,7 @@ const Dashboard = ({Username}) => {
     const verifyUser = async () => {
       try {
         const { data } = await axios.post(
-          "http://localhost:3002/",
+          "https://alphatrade-backend-d8jd.onrender.com/",
           {},
           { withCredentials: true },
         );
@@ -24,7 +24,7 @@ const Dashboard = ({Username}) => {
         if (data.status) {
           setUser(data.user);
         } else {
-          window.location.href = "http://localhost:3000/login";
+          window.location.href = "https://alphatrade-backend-d8jd.onrender.com/login";
         }
       } catch (err) {
         console.log(err);

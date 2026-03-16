@@ -87,7 +87,7 @@ const Menu = ({ Username }) => {
           <li
             onClick={() => {
               handleMenuClick(7);
-              window.location.href = "http://localhost:3000";
+              window.location.href = "http://https://alphatrade-backend-d8jd.onrender.com:3000";
             }}
           >
             <p className={selectedMenu === 7 ? acitveMenuClass : menuClass}>

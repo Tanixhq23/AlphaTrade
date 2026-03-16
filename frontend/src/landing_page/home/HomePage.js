@@ -21,7 +21,7 @@ function HomePage() {
         if (!cookies.token) return;
 
         const { data } = await axios.post(
-          "http://localhost:3002/",
+          "https://alphatrade-backend-d8jd.onrender.com/",
           {},
           { withCredentials: true },
         );

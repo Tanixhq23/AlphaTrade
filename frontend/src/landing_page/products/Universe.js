@@ -6,7 +6,7 @@ function Universe() {
     const verifyUser = async () => {
       try {
         const { data } = await axios.post(
-          "http://localhost:3002/",
+          "https://alphatrade-backend-d8jd.onrender.com/",
           {},
           {
             withCredentials: true,
@@ -188,7 +188,7 @@ function Universe() {
             style={{ width: "20%", margin: "0 auto" }}
           >
             <a
-              href="http://localhost:3001/"
+              href="null"
               style={{ textDecoration: "none", color: "white" }}
             >
               Dashboard

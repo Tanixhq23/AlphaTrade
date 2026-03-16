@@ -6,7 +6,7 @@ function Hero() {
     const verifyUser = async () => {
       try {
         const { data } = await axios.post(
-          "http://localhost:3002/",
+          "https://alphatrade-backend-d8jd.onrender.com/",
           {},
           {
             withCredentials: true,
@@ -42,7 +42,7 @@ function Hero() {
             className="p-2 btn btn-primary signup-button fs-5 mb-5"
             style={{ width: "20%", margin: "0 auto" }}
           >
-            <a href="http://localhost:3001/" style={{textDecoration:"none", color: "white"}}>Dashboard</a>
+            <a href="null" style={{textDecoration:"none", color: "white"}}>Dashboard</a>
           </button>
         ) : (
           <button
