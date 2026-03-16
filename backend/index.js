@@ -14,7 +14,10 @@ const MONGO_URL = process.env.MONGO_URL;
 const app = express();
 app.use(
   cors({
-    origin: ["https://alphatrade-home.onrender.com", "http://localhost:3001"],
+    origin: [
+      "https://alphatrade-home.onrender.com",
+      "https://alphatrade-dashboard-mt5t.onrender.com",
+    ],
     credentials: true,
   }),
 );
